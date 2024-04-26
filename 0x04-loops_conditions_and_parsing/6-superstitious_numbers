@@ -1,0 +1,20 @@
+#!/bin/bash
+
+count=1
+while [ $count -le 20 ]; do
+    case $count in
+        4)
+            echo "4: Bad luck from China"
+            ;;
+        9)
+            echo "9: Bad luck from Japan"
+            ;;
+        17)
+            echo "17: Bad luck from Italy"
+            ;;
+        *)
+            echo "$count: Best School"
+            ;;
+    esac
+    ((count++))
+done
